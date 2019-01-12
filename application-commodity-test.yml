@@ -1,0 +1,19 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: ruigou-commodity-test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ruigou_commodity
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:cn/rui97/ruigou/mapper/*Mapper.xml
+  type-aliases-package: cn.rui97.ruigou.domain,cn.rui97.ruigou.query
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
