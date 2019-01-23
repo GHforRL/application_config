@@ -3,6 +3,7 @@ server:
   max-http-header-size: 1048576
   tomcat: 
     max-http-post-size: 1048576
+    basedir: /data/apps/temp
 spring:
   application:
     name: ruigou-common
